@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {StyleSheet, Text, View, Alert} from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Text, View, Alert } from 'react-native';
 import params from './src/params'
 import MineField from './src/components/MineField'
 import Header from './src/components/Header'
@@ -81,10 +81,10 @@ export default class App extends Component {
           onLevelSelected={this.onLevelSelected}
           onCancel={() => this.setState({ showLevelSelection: false })} />
         <Header flagsLeft={this.minesAmount() - flagsUsed(this.state.board)}
-          onNewGame={() => this.setState(this.createState())} 
+          onNewGame={() => this.setState(this.createState())}
           onFlagPress={() => this.setState({ showLevelSelection: true })} />
         <View style={styles.board}>
-          <MineField board={this.state.board} 
+          <MineField board={this.state.board}
             onOpenField={this.onOpenField}
             onSelectField={this.onSelectField} />
         </View>
