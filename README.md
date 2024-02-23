@@ -44,9 +44,3 @@ $ npx expo start # To Start the project
 <center>
 Made with : ❤️ : by Jersy Fernandes, feel free to reach me out.
 
-<style>
-  .img {
-    display: inline-block;
-  }
-
-</style>
